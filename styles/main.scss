@@ -1,0 +1,68 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html,body {
+    height:100%;
+}
+
+.container {
+    height:100%;
+}
+
+body {
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    padding: 0 2rem;
+}
+
+.background {
+    background: url("../assets/background.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.main-content {
+    width: 80%;
+    height: 80%;
+    // min-height: 80vh;
+    background-color: #ffffff;
+    .login-container {
+        min-height: 80vh;
+        form {
+            height: auto;
+            margin: 0 auto;
+            width: 70%;
+            .form-group {
+                width: 100%;
+            }
+        }
+        input {
+            border-radius: 30px;
+            border: 1px solid #000000;
+        }
+        button {
+            min-width: 7.5rem;
+            border-radius: 30px;
+        }
+    }
+    .design {
+        background: url("../assets/design.png");
+        background-size: cover;
+        height: 100%;
+        min-height: 80vh;
+        h1 {
+            display: block;
+            width: auto;
+            margin: 0 auto;
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 4rem;
+        }
+    }
+}
