@@ -1,0 +1,76 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  padding: 0 2rem;
+}
+
+.background {
+  background: url("../assets/background.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.main-content {
+  width: 80%;
+  height: 80%;
+  background-color: #ffffff;
+}
+
+.main-content .login-container {
+  min-height: 80vh;
+}
+
+.main-content .login-container form {
+  height: auto;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.main-content .login-container form .form-group {
+  width: 100%;
+}
+
+.main-content .login-container input {
+  border-radius: 30px;
+  border: 1px solid #000000;
+}
+
+.main-content .login-container button {
+  min-width: 7.5rem;
+  border-radius: 30px;
+}
+
+.main-content .design {
+  background: url("../assets/design.png");
+  background-size: cover;
+  height: 100%;
+  min-height: 80vh;
+}
+
+.main-content .design h1 {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 4rem;
+}
+/*# sourceMappingURL=main.css.map */
