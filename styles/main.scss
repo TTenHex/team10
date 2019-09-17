@@ -41,6 +41,9 @@ nav {
             .form-group {
                 width: 100%;
             }
+            p {
+                font-size: 1rem;
+            }
         }
         input {
             border-radius: 30px;
@@ -64,5 +67,12 @@ nav {
             font-weight: 500;
             font-size: 4rem;
         }
+    }
+}
+
+.signup {
+    h1.form-heading {
+        font-size: 2rem;
+        margin-bottom: 3rem;
     }
 }
