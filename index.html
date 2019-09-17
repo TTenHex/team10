@@ -19,10 +19,10 @@
         <div class="container-fluid main-content align-self-center">
             <div class="row">
                 <div class="login-container d-flex align-items-center justiy-content-center col-lg-6 col-sm-12 col-md-12">
-                    <form class="d-flex flex-column align-items-center justify-content-center">
+                    <form action="backend/login.php" method="POST" class="d-flex flex-column align-items-center justify-content-center">
                         <div class="form-group">
-                          <label for="username">Username</label>
-                          <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="username">
+                          <label for="username">Email</label>
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="email">
                         </div>
                         <div class="form-group">
                           <label for="password">Password</label>
@@ -30,7 +30,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Login</button>
                         <a class="mt-2" href="#">Forgot password?</a>
-                        <p class="lead mt-3">Don't have an account? <a href="/signup.html">Sign Up</a></p>
+                        <p class="lead mt-3">Don't have an account? <a href="/register.html">Sign Up</a></p>
                       </form>
                 </div>
     
