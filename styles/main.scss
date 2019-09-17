@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+@mixin breakpoint($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
 html,body {
     height:100%;
 }
@@ -38,6 +44,9 @@ nav {
             height: auto;
             margin: 0 auto;
             width: 70%;
+            @include breakpoint(600px) {
+                width: 90%;
+            }
             .form-group {
                 width: 100%;
             }
@@ -74,5 +83,8 @@ nav {
     h1.form-heading {
         font-size: 2rem;
         margin-bottom: 3rem;
+        @include breakpoint(600px) {
+            font-size: 1.5rem;
+        }
     }
 }

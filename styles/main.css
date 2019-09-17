@@ -44,6 +44,12 @@ nav {
   width: 70%;
 }
 
+@media screen and (max-width: 600px) {
+  .main-content .login-container form {
+    width: 90%;
+  }
+}
+
 .main-content .login-container form .form-group {
   width: 100%;
 }
@@ -81,5 +87,11 @@ nav {
 .signup h1.form-heading {
   font-size: 2rem;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .signup h1.form-heading {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
