@@ -4,6 +4,8 @@ include("config.php");
 //start session
 session_start();
 
+header("Content-Type: application/json");
+
 //check if input fields contain data or not 
 if (!isset($_POST['email'], $_POST['password'])) {
     // Could not get the data that should have been sent.
@@ -28,7 +30,7 @@ if ($stmt->num_rows > 0) {
         $_SESSION['name'] = $name;
         $_SESSION['email'] = $_POST['email'];
         $_SESSION['id'] = $id;
-        echo 'Welcome ' . $_SESSION['name'] . '!';
+        echo 'Login Successful! Welcome ' . $_SESSION['name'] . '!';
     } else {
         echo 'Incorrect password!';
     }
